@@ -19,6 +19,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Активы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Отрасли</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗначенияСвойствАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидАктива</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Перечисление1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.СвойстваАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗначенияСвойствАктивов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

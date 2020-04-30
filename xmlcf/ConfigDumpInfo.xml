@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
-		<Metadata name="Catalog.Активы" id="7138b228-cb5d-4294-83f7-9fe682af52a1" configVersion="5afccdf0cc2af442af758cdb5d72364500000000">
+		<Metadata name="Catalog.Активы" id="7138b228-cb5d-4294-83f7-9fe682af52a1" configVersion="4c35393c37dc1e49be93ec74fdedba5d00000000">
 			<Metadata name="Catalog.Активы.Attribute.Вид" id="ada9d472-c7a5-44ab-965f-faa536e27432"/>
 			<Metadata name="Catalog.Активы.Attribute.Валюта" id="df909100-34a9-476a-96af-32ddeb1d196f"/>
 		</Metadata>
@@ -9,8 +9,12 @@
 		<Metadata name="Catalog.ЗначенияСвойствАктивов" id="16a9c949-e80e-403c-89a1-f158c7488056" configVersion="ffd1f9762e8c4941b9175ed9f1cb2e8c00000000"/>
 		<Metadata name="Catalog.Отрасли" id="fd585eff-6d58-460c-b032-62ddef30e55e" configVersion="7237ea1a96ba3348abbd1519bd7767a800000000"/>
 		<Metadata name="Catalog.Портфель" id="2fdef067-9023-477e-9e2f-cc5902b1cc0c" configVersion="4e3c922ad23ba842b4548d2f67706f9300000000"/>
-		<Metadata name="ChartOfCharacteristicTypes.СвойстваАктивов" id="de8568b2-2559-4249-a857-857c0fc07de9" configVersion="73885febbd2630419cc6de1ffc6fd09600000000"/>
-		<Metadata name="Configuration.МоиИнвестиции" id="4b9e2fe7-5eef-4de2-916b-060b6a28366c" configVersion="cc88e39935d99341b6144fe86851902c00000000"/>
+		<Metadata name="ChartOfCharacteristicTypes.СвойстваАктивов" id="de8568b2-2559-4249-a857-857c0fc07de9" configVersion="97e4e2aaaa01c74eb6a087030dd0b55500000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияКлиент" id="e6941fdb-54bd-48dc-8981-083b48c31486" configVersion="eebe70556d793847b1fbd365ceb84f6900000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияСервер" id="89a28f54-2045-4512-bfdf-f4c4db838692" configVersion="9766a71298eded40873429bc14f7cdf200000000"/>
+		<Metadata name="CommonModule.РасчетДиверсификацииКлиент" id="830356af-bed3-4600-ad3c-b64b4c4245c1" configVersion="44d92f4aaade9e4883a50c3756b5875700000000"/>
+		<Metadata name="CommonModule.РасчетДиверсификацииСервер" id="03faa19e-a6e0-4873-b2df-eed72395d0f6" configVersion="e01974c3dbfe21429358ca82564a2ccc00000000"/>
+		<Metadata name="Configuration.МоиИнвестиции" id="4b9e2fe7-5eef-4de2-916b-060b6a28366c" configVersion="6be2b1f6d5b1ca47857418039d773d0400000000"/>
 		<Metadata name="Enum.ВидАктива" id="31bc05dc-ebf2-4a52-a25c-bbdbf3beaa2b" configVersion="cdfb131e3857724384e4705f083c0cd700000000">
 			<Metadata name="Enum.ВидАктива.EnumValue.Акция" id="246411a1-7c9b-4d7a-83cc-dc87a4c18a7a"/>
 			<Metadata name="Enum.ВидАктива.EnumValue.ETF" id="d5e85fc2-f154-478b-82c6-507c26f4ec55"/>
@@ -26,7 +30,7 @@
 		<Metadata name="Role.ПолныеПрава" id="1e8947ed-9084-48b9-a6c3-5f3b4a96e995" configVersion="0c8a1cce3db36f4a858515404fbfb83a00000000"/>
 		<Metadata name="Role.ПолныеПрава.Rights" id="1e8947ed-9084-48b9-a6c3-5f3b4a96e995.0" configVersion="27e2343cd793ef49a9621e1f14cd896900000000"/>
 		<Metadata name="Subsystem.ВводДанных" id="6ce4380d-7c58-4383-8e8c-87b670a47af9" configVersion="fd0ea9e02a51274586c6a53132962c1300000000"/>
-		<Metadata name="Subsystem.Настройка" id="1a06eec8-945c-4a0d-976b-81ef65284a0f" configVersion="4dbfc74434bd4948948f57c5149c2ce400000000"/>
+		<Metadata name="Subsystem.Настройка" id="1a06eec8-945c-4a0d-976b-81ef65284a0f" configVersion="f9e1704a35ea4347adc7509d508f82e200000000"/>
 		<Metadata name="Subsystem.Отчеты" id="3bb4b862-fa5d-436e-9306-1280ef1c7603" configVersion="8b7373fdbd26a140bca54a54e87aa68b00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

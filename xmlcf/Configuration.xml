@@ -188,6 +188,10 @@
 			<Subsystem>ВводДанных</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
 			<Role>ПолныеПрава</Role>
+			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
+			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>РасчетДиверсификацииКлиент</CommonModule>
+			<CommonModule>РасчетДиверсификацииСервер</CommonModule>
 			<Catalog>Активы</Catalog>
 			<Catalog>Валюта</Catalog>
 			<Catalog>Отрасли</Catalog>
