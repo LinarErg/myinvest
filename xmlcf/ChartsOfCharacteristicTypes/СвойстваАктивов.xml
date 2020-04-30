@@ -68,7 +68,7 @@
 			<FoldersOnTop>true</FoldersOnTop>
 			<CodeLength>9</CodeLength>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
-			<DescriptionLength>25</DescriptionLength>
+			<DescriptionLength>100</DescriptionLength>
 			<CodeSeries>WholeCharacteristicKind</CodeSeries>
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>

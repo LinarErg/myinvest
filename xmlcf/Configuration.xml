@@ -187,18 +187,25 @@
 			<Subsystem>Настройка</Subsystem>
 			<Subsystem>ВводДанных</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
+			<Subsystem>Примеры</Subsystem>
 			<Role>ПолныеПрава</Role>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
 			<CommonModule>РасчетДиверсификацииКлиент</CommonModule>
 			<CommonModule>РасчетДиверсификацииСервер</CommonModule>
+			<CommonModule>ЗагрузкаСМосковскойБиржиКлиент</CommonModule>
+			<CommonModule>ЗагрузкаСМосковскойБиржиСервер</CommonModule>
 			<Catalog>Активы</Catalog>
 			<Catalog>Валюта</Catalog>
 			<Catalog>Отрасли</Catalog>
 			<Catalog>Портфель</Catalog>
 			<Catalog>ЗначенияСвойствАктивов</Catalog>
+			<Catalog>СписокТорговыхСистем</Catalog>
+			<Catalog>Рынок</Catalog>
+			<Catalog>РежимТоргов</Catalog>
 			<Enum>ВидАктива</Enum>
 			<Enum>Перечисление1</Enum>
+			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>
 		</ChildObjects>

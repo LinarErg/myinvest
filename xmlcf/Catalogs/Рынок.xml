@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Catalog uuid="7138b228-cb5d-4294-83f7-9fe682af52a1">
+	<Catalog uuid="d35e0a1b-6b23-42a4-ba47-da28d5963a11">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Активы" category="Object">
-				<xr:TypeId>37c50a6d-23d5-4b30-b06c-bf9c6b0964d5</xr:TypeId>
-				<xr:ValueId>cb5f32e2-89e4-4699-bcad-e5078d04b0b3</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Рынок" category="Object">
+				<xr:TypeId>93a1c092-0aca-4d9e-83e7-37ea593693da</xr:TypeId>
+				<xr:ValueId>edc8fd58-5942-4970-960a-5e28dfc3737d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Активы" category="Ref">
-				<xr:TypeId>2b9d4752-5456-48f8-a193-f0afe46f315c</xr:TypeId>
-				<xr:ValueId>41b519b4-0ba7-4450-a8db-1b672a9caa5f</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Рынок" category="Ref">
+				<xr:TypeId>6b6a0c14-5bce-4085-a3e0-a5b83bcd3eee</xr:TypeId>
+				<xr:ValueId>d59dda7c-fdc8-4ed7-820a-30798b7102a5</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Активы" category="Selection">
-				<xr:TypeId>6bdf1de4-b623-4c77-b11e-082fa5f61737</xr:TypeId>
-				<xr:ValueId>bb270be3-95a5-4011-9a3e-5b39fb998ff4</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Рынок" category="Selection">
+				<xr:TypeId>5e3d1b53-4d23-40f0-b2f0-e86c58d3211d</xr:TypeId>
+				<xr:ValueId>5a3e9f1e-0f9b-4663-b1ad-bd43b34c04bc</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Активы" category="List">
-				<xr:TypeId>c0355bc0-cf30-43b0-914f-4ef9e4ccd1af</xr:TypeId>
-				<xr:ValueId>4d27618b-2248-400d-808a-314fed6eee09</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Рынок" category="List">
+				<xr:TypeId>9549044e-d048-44a6-9e23-74adf8a26188</xr:TypeId>
+				<xr:ValueId>69dff0ed-793e-4bb4-9375-d751eeb4342d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Активы" category="Manager">
-				<xr:TypeId>4f17b126-1da5-4c8c-93ba-7d1a44739931</xr:TypeId>
-				<xr:ValueId>77b8de19-41a0-436c-9fd8-9aebfa3943eb</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Рынок" category="Manager">
+				<xr:TypeId>7e0f2857-ecb1-4421-a5ef-a20e374eb441</xr:TypeId>
+				<xr:ValueId>7b4b02ba-fd92-4ef7-80e7-0b5d7332a0fa</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Активы</Name>
+			<Name>Рынок</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Активы</v8:content>
+					<v8:content>Рынок (market)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -38,7 +38,9 @@
 			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
-			<Owners/>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СписокТорговыхСистем</xr:Item>
+			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
 			<DescriptionLength>150</DescriptionLength>
@@ -54,15 +56,15 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Активы.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Активы.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Рынок.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Рынок.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.Активы.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm/>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.Активы.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -87,100 +89,20 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="ada9d472-c7a5-44ab-965f-faa536e27432">
+			<Attribute uuid="db2437a0-b365-41ee-84bf-aec66592716f">
 				<Properties>
-					<Name>Вид</Name>
+					<Name>Заголовок</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вид</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.ВидАктива</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="df909100-34a9-476a-96af-32ddeb1d196f">
-				<Properties>
-					<Name>Валюта</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Валюта</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="78f80778-5e6f-4146-8a80-fe6a07f47d8b">
-				<Properties>
-					<Name>Тикер</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Тикер</v8:content>
+							<v8:content>Заголовок</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>10</v8:Length>
+							<v8:Length>150</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -211,8 +133,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
