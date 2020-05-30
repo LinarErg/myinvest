@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Catalog uuid="2fdef067-9023-477e-9e2f-cc5902b1cc0c">
+	<Catalog uuid="da1b6938-508f-46d8-802c-62703fe5d7ca">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Портфель" category="Object">
-				<xr:TypeId>c69d7f19-942f-463c-b89e-e49557075c1d</xr:TypeId>
-				<xr:ValueId>ad1bc4ea-a018-40bd-96df-f13bb91132bd</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Брокер" category="Object">
+				<xr:TypeId>ccadf89a-1237-4e08-9269-ef888a2a0814</xr:TypeId>
+				<xr:ValueId>767356f1-0863-4fee-b6f8-4edfa5d4b4d1</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Портфель" category="Ref">
-				<xr:TypeId>e6c8a139-f6b6-4462-91a6-bbcadab91c8f</xr:TypeId>
-				<xr:ValueId>b4e48547-fe2d-436d-8d6f-3b695a2b502f</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Брокер" category="Ref">
+				<xr:TypeId>e752b2c5-85ea-4e6d-9e28-0846c99e0ab3</xr:TypeId>
+				<xr:ValueId>5a7c396e-3487-49eb-95f5-9ad08f6c856b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Портфель" category="Selection">
-				<xr:TypeId>5c3a03fe-a345-478a-b9e8-f718d6f72893</xr:TypeId>
-				<xr:ValueId>24699abf-52e7-4110-90d6-3bdd1fbacced</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Брокер" category="Selection">
+				<xr:TypeId>27bcd184-c8c5-42b7-868d-66bab6728d30</xr:TypeId>
+				<xr:ValueId>785076f6-1f0e-4acf-9750-cb0be7a7eca3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Портфель" category="List">
-				<xr:TypeId>3c4d12d6-ced8-41bd-b049-5ea566b42448</xr:TypeId>
-				<xr:ValueId>a1172327-07dc-4080-9d3b-c809521e6f12</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Брокер" category="List">
+				<xr:TypeId>39a0ea77-7507-448c-baa9-0f5b7c45edeb</xr:TypeId>
+				<xr:ValueId>38b75454-fbcc-43f6-a7d9-e82c1f070a36</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Портфель" category="Manager">
-				<xr:TypeId>5ffc3d79-959c-4224-acfe-c5c582e0eef4</xr:TypeId>
-				<xr:ValueId>26598dbd-9b37-49ed-b1b0-75ee627c6d3f</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Брокер" category="Manager">
+				<xr:TypeId>096d0977-5ef9-48c8-ae01-991b5229adb5</xr:TypeId>
+				<xr:ValueId>16ee5d5e-6669-439b-aec4-7e044074f4e7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Портфель</Name>
+			<Name>Брокер</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Портфель</v8:content>
+					<v8:content>Брокер</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>150</DescriptionLength>
+			<DescriptionLength>25</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -54,8 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Портфель.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Портфель.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Брокер.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Брокер.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -87,18 +87,23 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="616aa156-546b-40c1-9ff6-e6b5b25d6a11">
+			<Attribute uuid="472c4d61-b17a-4a0d-a0d2-1c1963673e59">
 				<Properties>
-					<Name>Брокер</Name>
+					<Name>ПроцентКомисии</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Брокер</v8:content>
+							<v8:content>Процент комисии</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Брокер</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>5</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
