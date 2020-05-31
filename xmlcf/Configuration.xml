@@ -196,7 +196,7 @@
 			<CommonModule>РасчетДиверсификацииСервер</CommonModule>
 			<CommonModule>ЗагрузкаСМосковскойБиржиКлиент</CommonModule>
 			<CommonModule>ЗагрузкаСМосковскойБиржиСервер</CommonModule>
-			<DefinedType>СуммаАктива</DefinedType>
+			<DefinedType>Сумма10</DefinedType>
 			<Catalog>Активы</Catalog>
 			<Catalog>Брокер</Catalog>
 			<Catalog>Валюта</Catalog>
@@ -211,8 +211,10 @@
 			<Enum>ВидАктива</Enum>
 			<Enum>Перечисление1</Enum>
 			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
+			<Report>ОстаткиДенежныхСредств</Report>
 			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
+			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
 			<AccumulationRegister>АктивыОстатки</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>

@@ -60,7 +60,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.СуммаАктива</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

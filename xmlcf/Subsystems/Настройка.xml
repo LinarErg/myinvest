@@ -28,6 +28,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Рынок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РежимТоргов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Брокер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПроцентКомиссииБрокера</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

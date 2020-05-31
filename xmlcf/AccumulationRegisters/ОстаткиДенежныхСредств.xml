@@ -60,7 +60,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.СуммаАктива</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -84,18 +84,18 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Dimension uuid="c43ae25d-b49f-484b-81f4-8afd928b51f5">
+			<Attribute uuid="1140dfa2-592c-4508-a413-d9146c10d098">
 				<Properties>
-					<Name>Валюта</Name>
+					<Name>ВидОперации</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Валюта</v8:content>
+							<v8:content>Вид операции</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
+						<v8:Type>cfg:EnumRef.ВидыОперацийПриходРасходДенежныхСредств</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -116,24 +116,22 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
-					<UseInTotals>true</UseInTotals>
 				</Properties>
-			</Dimension>
-			<Dimension uuid="ec3bead4-066f-4ece-a20c-d258242df71e">
+			</Attribute>
+			<Dimension uuid="c43ae25d-b49f-484b-81f4-8afd928b51f5">
 				<Properties>
-					<Name>ВидОперации</Name>
+					<Name>Валюта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вид операции</v8:content>
+							<v8:content>Валюта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ВидыОперацийПриходРасходДенежныхСредств</v8:Type>
+						<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
