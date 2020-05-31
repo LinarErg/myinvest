@@ -65,8 +65,8 @@
 			<Metadata name="Document.ПриобртениеАктива.Attribute.Количество" id="e44374c3-da35-4e3a-95ee-c5598e880129"/>
 			<Metadata name="Document.ПриобртениеАктива.Attribute.Актив" id="f8a1e74f-d2c3-456e-a2f4-cd0f7d2bfdca"/>
 		</Metadata>
-		<Metadata name="Document.ПриобртениеАктива.Form.ФормаДокумента" id="b85c102c-b616-4ee0-a0f1-24158e82ff54" configVersion="a7138ca9fb8cc6418523da5273679fba00000000"/>
-		<Metadata name="Document.ПриобртениеАктива.Form.ФормаДокумента.Form" id="b85c102c-b616-4ee0-a0f1-24158e82ff54.0" configVersion="ca521e816683454f97947cc31ce4bf5800000000"/>
+		<Metadata name="Document.ПриобртениеАктива.Form.ФормаДокумента" id="b85c102c-b616-4ee0-a0f1-24158e82ff54" configVersion="cf7527cd2264464d82ba9f0c753ee83d00000000"/>
+		<Metadata name="Document.ПриобртениеАктива.Form.ФормаДокумента.Form" id="b85c102c-b616-4ee0-a0f1-24158e82ff54.0" configVersion="d44f53731c12ea4cbaaa95992b0b6d1f00000000"/>
 		<Metadata name="Document.ПриходРасходДенежныхСредств" id="cb01c4d4-8315-46cc-ba6d-0495c788c329" configVersion="f6b2f762902dcd4f8eab3e467eff9c6d00000000">
 			<Metadata name="Document.ПриходРасходДенежныхСредств.Attribute.ВидОперации" id="2599798d-69dd-45a9-9ba3-3b96ef2226d2"/>
 			<Metadata name="Document.ПриходРасходДенежныхСредств.Attribute.Комментарий" id="34aa43ea-407e-4aa4-b521-c9cf2c238872"/>
