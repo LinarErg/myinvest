@@ -208,6 +208,7 @@
 			<Catalog>СписокТорговыхСистем</Catalog>
 			<Document>ПриобртениеАктива</Document>
 			<Document>ПриходРасходДенежныхСредств</Document>
+			<Document>ПродажаАктива</Document>
 			<Enum>ВидАктива</Enum>
 			<Enum>Перечисление1</Enum>
 			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>

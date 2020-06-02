@@ -98,6 +98,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="86cc5589-cd10-450a-8108-64545b661e05">
+				<Properties>
+					<Name>ПриобретениеАктива</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приобретение актива</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="7a95d905-f17e-4b5f-b147-e7c9dcca13da">
 				<Properties>
 					<Name>ОбменВалюты</Name>
@@ -117,6 +129,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Комиссия брокера</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d5167c85-e888-4414-aa02-21d2b593163d">
+				<Properties>
+					<Name>НКД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НКД</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
