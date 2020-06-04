@@ -73,6 +73,11 @@
 						<Event name="OnChange">ПортфельПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="Актив" id="46">
+					<DataPath>Объект.Актив</DataPath>
+					<ContextMenu name="АктивКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="АктивРасширеннаяПодсказка" id="48"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСуммы" id="23">

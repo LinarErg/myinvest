@@ -3,24 +3,45 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
-		<InputField name="Код" id="1">
-			<DataPath>Объект.Code</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="Наименование" id="4">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
-		<InputField name="Тикер" id="16">
-			<DataPath>Объект.Тикер</DataPath>
-			<ContextMenu name="ТикерКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ТикерРасширеннаяПодсказка" id="18"/>
-		</InputField>
+		<UsualGroup name="ГруппаИмяТикер" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа имя тикер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа имя тикер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИмяТикерРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="Тикер" id="16">
+					<DataPath>Объект.Тикер</DataPath>
+					<ContextMenu name="ТикерКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТикерРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="СокращенноеНаименование" id="40">
+					<DataPath>Объект.СокращенноеНаименование</DataPath>
+					<ContextMenu name="СокращенноеНаименованиеКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="СокращенноеНаименованиеРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Вид" id="7">
 			<DataPath>Объект.Вид</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -33,16 +54,97 @@
 			<ContextMenu name="ВалютаКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="12"/>
 		</InputField>
-		<InputField name="Отрасль" id="13">
-			<DataPath>Объект.Отрасль</DataPath>
-			<ContextMenu name="ОтрасльКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ОтрасльРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="Номинал" id="19">
-			<DataPath>Объект.Номинал</DataPath>
-			<ContextMenu name="НоминалКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="НоминалРасширеннаяПодсказка" id="21"/>
-		</InputField>
+		<Pages name="ГруппаСтраницы" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаОбщее" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница общее</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница общее</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаОбщееРасширеннаяПодсказка" id="33"/>
+				</Page>
+				<Page name="ГруппаСтраницаАналитика" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница аналитика</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаАналитикаРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="Отрасль" id="13">
+							<DataPath>Объект.Отрасль</DataPath>
+							<ContextMenu name="ОтрасльКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ОтрасльРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаДанныеАкций" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница данные акций</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница данные акций</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаДанныеАкцийРасширеннаяПодсказка" id="39"/>
+				</Page>
+				<Page name="ГруппаСтраницаДанныеОблигаций" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные облигации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница данные облигаций</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаДанныеОблигацийРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="Номинал" id="19">
+							<DataPath>Объект.Номинал</DataPath>
+							<ContextMenu name="НоминалКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="НоминалРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -53,4 +155,21 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="КомандаОбновитьДанныеСБиржи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить данные с биржи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить данные с биржи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОбновитьДанныеСБиржи</Action>
+		</Command>
+	</Commands>
 </Form>

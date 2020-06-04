@@ -38,6 +38,33 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаДанныеСделки" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сделки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные сделки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаДанныеСделкиРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="НомерСделки" id="43">
+					<DataPath>Объект.НомерСделки</DataPath>
+					<ContextMenu name="НомерСделкиКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="НомерСделкиРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="НомерПоручения" id="46">
+					<DataPath>Объект.НомерПоручения</DataPath>
+					<ContextMenu name="НомерПорученияКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="НомерПорученияРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаШапка" id="24">
 			<Title>
 				<v8:item>
@@ -52,6 +79,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="25"/>
 			<ChildItems>

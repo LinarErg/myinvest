@@ -240,11 +240,11 @@
 			</Dimension>
 			<Dimension uuid="adc2fd23-1dae-4ef7-abcc-d1cb327a67f8">
 				<Properties>
-					<Name>ДокументПарти</Name>
+					<Name>ДокументПартии</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Документ парти</v8:content>
+							<v8:content>Документ партии</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

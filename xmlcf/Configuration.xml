@@ -189,6 +189,7 @@
 			<Subsystem>ВводДанных</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
 			<Subsystem>Примеры</Subsystem>
+			<Subsystem>Вспомогательные</Subsystem>
 			<Role>ПолныеПрава</Role>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
@@ -207,15 +208,18 @@
 			<Catalog>Рынок</Catalog>
 			<Catalog>СписокТорговыхСистем</Catalog>
 			<Document>ПриобртениеАктива</Document>
-			<Document>ПриходРасходДенежныхСредств</Document>
 			<Document>ПродажаАктива</Document>
+			<Document>ПриходРасходДенежныхСредств</Document>
 			<Enum>ВидАктива</Enum>
 			<Enum>Перечисление1</Enum>
 			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
+			<Enum>ВидЗагрузкиТинькофф</Enum>
 			<Report>ОстаткиДенежныхСредств</Report>
 			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
+			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
+			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
 			<AccumulationRegister>АктивыОстатки</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>
