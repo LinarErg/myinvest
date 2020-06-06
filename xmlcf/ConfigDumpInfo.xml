@@ -57,11 +57,12 @@
 		<Metadata name="CommonModule.РасчетДиверсификацииКлиент" id="830356af-bed3-4600-ad3c-b64b4c4245c1" configVersion="282f51e4630d054087f063842504684600000000"/>
 		<Metadata name="CommonModule.РасчетДиверсификацииСервер" id="03faa19e-a6e0-4873-b2df-eed72395d0f6" configVersion="d3251dd9ccda864d8ff5f357a8414fae00000000"/>
 		<Metadata name="Configuration.МоиИнвестиции" id="4b9e2fe7-5eef-4de2-916b-060b6a28366c" configVersion="9a8de64ce56a3a4091e6c1165672e0e500000000"/>
-		<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф" id="52a6f2d8-6bd1-432d-8c66-921ab4e033a5" configVersion="8f6f9d4c73d0f841864ef61b0bd427a400000000">
+		<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф" id="52a6f2d8-6bd1-432d-8c66-921ab4e033a5" configVersion="7dd5480d0ab6924e9a3adaecbb2ef0c300000000">
 			<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф.Attribute.ВидЗагрузки" id="2209d77b-7c28-4347-890c-983e14be8882"/>
+			<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф.Attribute.Портфель" id="91e30f79-beb7-44d6-80cd-55258023ea63"/>
 		</Metadata>
-		<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф.Form.Форма" id="c0ba1d82-76e2-4444-8618-47cd7f90e531" configVersion="5755fc2fecce424cab5262b37038d3d000000000"/>
-		<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф.Form.Форма.Form" id="c0ba1d82-76e2-4444-8618-47cd7f90e531.0" configVersion="fd8d7b91d102a245b1df5333cd76a87800000000"/>
+		<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф.Form.Форма" id="c0ba1d82-76e2-4444-8618-47cd7f90e531" configVersion="167c389eeb95354796b2639b2356ff8100000000"/>
+		<Metadata name="DataProcessor.ЗагрузкаДвиженийТинькофф.Form.Форма.Form" id="c0ba1d82-76e2-4444-8618-47cd7f90e531.0" configVersion="d6a811b722d99649829e8199ead64da900000000"/>
 		<Metadata name="DataProcessor.ЗагрузкаМБПример" id="db9e45dc-fe10-4aaf-b90f-0054e044468c" configVersion="7f25074d1a092e49a2b38a66a598520500000000"/>
 		<Metadata name="DataProcessor.ЗагрузкаМБПример.Form.ВыборИнструментаММВБ" id="03c221d7-086a-437f-8f39-f9e0b4a6b38d" configVersion="9469c4b08d8cf24b993a9c3cd568775000000000"/>
 		<Metadata name="DataProcessor.ЗагрузкаМБПример.Form.ВыборИнструментаММВБ.Form" id="03c221d7-086a-437f-8f39-f9e0b4a6b38d.0" configVersion="180d65447bb9a945bc8b99e9c1bd9b4100000000"/>
