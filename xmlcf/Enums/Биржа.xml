@@ -2,22 +2,27 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<Enum uuid="9e842af7-9338-401e-99ca-0183497d0e3f">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.Перечисление1" category="Ref">
+			<xr:GeneratedType name="EnumRef.Биржа" category="Ref">
 				<xr:TypeId>ccf24c94-efa8-44f0-9e48-6c4fa95f9ed1</xr:TypeId>
 				<xr:ValueId>c750b0ef-fb06-418c-833a-c63ec595a5bd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.Перечисление1" category="Manager">
+			<xr:GeneratedType name="EnumManager.Биржа" category="Manager">
 				<xr:TypeId>ee962cd4-b31b-4f16-9111-633c643971c9</xr:TypeId>
 				<xr:ValueId>cdfe0189-b8c7-4252-b475-d55130d03b2f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.Перечисление1" category="List">
+			<xr:GeneratedType name="EnumList.Биржа" category="List">
 				<xr:TypeId>f1e92957-9e1f-47c0-93bf-2b615d81a6f1</xr:TypeId>
 				<xr:ValueId>38e42734-9f00-4322-bb32-f4c224e72a18</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Перечисление1</Name>
-			<Synonym/>
+			<Name>Биржа</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Биржа</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
 			<Characteristics/>
@@ -32,6 +37,31 @@
 			<Explanation/>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<EnumValue uuid="eeca440c-5082-44f0-bdc0-19dc5bb20f6a">
+				<Properties>
+					<Name>МОЕХ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МОЕХ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1818377c-c02d-476f-9eab-facfafda4f94">
+				<Properties>
+					<Name>СПБ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СПБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
 	</Enum>
 </MetaDataObject>

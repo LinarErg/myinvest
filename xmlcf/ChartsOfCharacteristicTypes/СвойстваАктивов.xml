@@ -46,7 +46,7 @@
 				<v8:Type>xs:string</v8:Type>
 				<v8:Type>xs:dateTime</v8:Type>
 				<v8:Type>xs:decimal</v8:Type>
-				<v8:Type>cfg:EnumRef.Перечисление1</v8:Type>
+				<v8:Type>cfg:EnumRef.Биржа</v8:Type>
 				<v8:Type>cfg:EnumRef.ВидАктива</v8:Type>
 				<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
 				<v8:Type>cfg:CatalogRef.Портфель</v8:Type>

@@ -20,6 +20,7 @@
 					<v8:content>Группа имя тикер</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИмяТикерРасширеннаяПодсказка" id="23"/>
@@ -42,18 +43,87 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Вид" id="7">
-			<DataPath>Объект.Вид</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ВидКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="Валюта" id="10">
-			<DataPath>Объект.Валюта</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ВалютаКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="12"/>
-		</InputField>
+		<UsualGroup name="ГруппаВидВалюта" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вид валюта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вид валюта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВидВалютаРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="Вид" id="7">
+					<DataPath>Объект.Вид</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Валюта" id="10">
+					<DataPath>Объект.Валюта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВалютаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Биржа" id="55">
+					<DataPath>Объект.Биржа</DataPath>
+					<ContextMenu name="БиржаКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="БиржаРасширеннаяПодсказка" id="57"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЦены" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЦеныРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<LabelField name="СредняяЦена" id="47">
+					<DataPath>СредняяЦена</DataPath>
+					<ContextMenu name="СредняяЦенаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СредняяЦенаРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="ТекущаяЦена" id="50">
+					<DataPath>ТекущаяЦена</DataPath>
+					<ContextMenu name="ТекущаяЦенаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТекущаяЦенаРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<Button name="КомандаОбновитьДанныеСБиржи" id="53">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаОбновитьДанныеСБиржи</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить данные с биржи</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаОбновитьДанныеСБиржиРасширеннаяПодсказка" id="54"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<Pages name="ГруппаСтраницы" id="30">
 			<Title>
 				<v8:item>
@@ -153,6 +223,28 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТекущаяЦена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая цена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="СредняяЦена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средняя цена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
