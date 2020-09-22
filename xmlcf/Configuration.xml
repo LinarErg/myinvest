@@ -217,6 +217,7 @@
 			<Report>ОстаткиДенежныхСредств</Report>
 			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
+			<DataProcessor>ГлавнаяСтраница</DataProcessor>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
 			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
