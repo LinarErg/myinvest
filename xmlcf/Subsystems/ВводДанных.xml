@@ -18,10 +18,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Активы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Отрасли</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобртениеАктива</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходРасходДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Удалить_ПриходРасходДенежныхСредств</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаАктива</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДвиженийТинькофф</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГлавнаяСтраница</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДвиженийВТБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПополнениеВыводСБрокерскогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидОперацииПополнениеВыводСБрокерскогоСчета</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

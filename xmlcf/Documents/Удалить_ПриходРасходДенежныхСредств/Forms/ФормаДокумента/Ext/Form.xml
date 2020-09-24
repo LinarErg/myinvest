@@ -78,6 +78,11 @@
 					<ContextMenu name="АктивКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="АктивРасширеннаяПодсказка" id="48"/>
 				</InputField>
+				<InputField name="НомерРаспоряжения" id="49">
+					<DataPath>Объект.НомерРаспоряжения</DataPath>
+					<ContextMenu name="НомерРаспоряженияКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="НомерРаспоряженияРасширеннаяПодсказка" id="51"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСуммы" id="23">
@@ -200,7 +205,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.ПриходРасходДенежныхСредств</v8:Type>
+				<v8:Type>cfg:DocumentObject.Удалить_ПриходРасходДенежныхСредств</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

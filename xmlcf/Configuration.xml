@@ -207,17 +207,21 @@
 			<Catalog>РежимТоргов</Catalog>
 			<Catalog>Рынок</Catalog>
 			<Catalog>СписокТорговыхСистем</Catalog>
+			<Document>ПополнениеВыводСБрокерскогоСчета</Document>
 			<Document>ПриобртениеАктива</Document>
 			<Document>ПродажаАктива</Document>
-			<Document>ПриходРасходДенежныхСредств</Document>
-			<Enum>ВидАктива</Enum>
+			<Document>Удалить_ПриходРасходДенежныхСредств</Document>
 			<Enum>Биржа</Enum>
-			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
+			<Enum>ВидАктива</Enum>
+			<Enum>ВидЗагрузкиВТБ</Enum>
 			<Enum>ВидЗагрузкиТинькофф</Enum>
+			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
+			<Enum>ВидОперацииПополнениеВыводСБрокерскогоСчета</Enum>
 			<Report>ОстаткиДенежныхСредств</Report>
-			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
-			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
 			<DataProcessor>ГлавнаяСтраница</DataProcessor>
+			<DataProcessor>ЗагрузкаДвиженийВТБ</DataProcessor>
+			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
+			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
 			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>

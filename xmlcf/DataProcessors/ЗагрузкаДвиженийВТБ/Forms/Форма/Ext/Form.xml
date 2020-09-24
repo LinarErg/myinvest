@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ВидЗагрузки" id="10">
+			<DataPath>Объект.ВидЗагрузки</DataPath>
+			<ContextMenu name="ВидЗагрузкиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВидЗагрузкиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Портфель" id="76">
+			<DataPath>Объект.Портфель</DataPath>
+			<ContextMenu name="ПортфельКонтекстноеМеню" id="77"/>
+			<ExtendedTooltip name="ПортфельРасширеннаяПодсказка" id="78"/>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаТабличныйДокумент" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табличный документ загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница табличный документ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаТабличныйДокументРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Button name="ПрочитатьТабличныйДокумент" id="13">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПрочитатьТабличныйДокумент</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прочитать</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПрочитатьТабличныйДокументРасширеннаяПодсказка" id="14"/>
+						</Button>
+						<SpreadSheetDocumentField name="ТабличныйДокумент" id="5">
+							<DataPath>ТабличныйДокумент</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ShowGrid>true</ShowGrid>
+							<ShowHeaders>true</ShowHeaders>
+							<Edit>true</Edit>
+							<ContextMenu name="ТабличныйДокументКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ТабличныйДокументРасширеннаяПодсказка" id="7"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаТаблицаОперацийСДС" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операции с денежными средствами</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница таблица операций СДС</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаТаблицаОперацийСДСРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<Table name="ТаблицаОперацийСДенежнымиСредствами" id="79">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаОперацийСДенежнымиСредствами</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиКонтекстноеМеню" id="80"/>
+							<AutoCommandBar name="ТаблицаОперацийСДенежнымиСредствамиКоманднаяПанель" id="81">
+								<ChildItems>
+									<Button name="ТаблицаОперацийСДенежнымиСредствамиСоздатьДокументыДС" id="128">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьДокументыДС</CommandName>
+										<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСоздатьДокументыДСРасширеннаяПодсказка" id="129"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиРасширеннаяПодсказка" id="82"/>
+							<SearchStringAddition name="ТаблицаОперацийСДенежнымиСредствамиСтрокаПоиска" id="83">
+								<AdditionSource>
+									<Item>ТаблицаОперацийСДенежнымиСредствами</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиСтрокаПоискаКонтекстноеМеню" id="84"/>
+								<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСтрокаПоискаРасширеннаяПодсказка" id="85"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаОперацийСДенежнымиСредствамиСостояниеПросмотра" id="86">
+								<AdditionSource>
+									<Item>ТаблицаОперацийСДенежнымиСредствами</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиСостояниеПросмотраКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСостояниеПросмотраРасширеннаяПодсказка" id="88"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаОперацийСДенежнымиСредствамиУправлениеПоиском" id="89">
+								<AdditionSource>
+									<Item>ТаблицаОперацийСДенежнымиСредствами</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиУправлениеПоискомКонтекстноеМеню" id="90"/>
+								<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиУправлениеПоискомРасширеннаяПодсказка" id="91"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиДокументБД" id="125">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.ДокументБД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиДокументБДКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиДокументБДРасширеннаяПодсказка" id="127"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиНомерРаспоряжения" id="92">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.НомерРаспоряжения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиНомерРаспоряженияКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиНомерРаспоряженияРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиТип" id="95">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Тип</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиТипКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиТипРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиПодано" id="98">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Подано</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиПоданоКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиПоданоРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиИсполнено" id="101">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Исполнено</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиИсполненоКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиИсполненоРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиВалюта" id="104">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Валюта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиВалютаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиВалютаРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиСчетОткуда" id="107">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.СчетОткуда</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиСчетОткудаКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСчетОткудаРасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиСчетКуда" id="110">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.СчетКуда</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиСчетКудаКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСчетКудаРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиСумма" id="113">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиСуммаКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСуммаРасширеннаяПодсказка" id="115"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиСуммаКИсполнению" id="116">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.СуммаКИсполнению</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиСуммаКИсполнениюКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиСуммаКИсполнениюРасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиНалог" id="119">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Налог</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиНалогКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиНалогРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="ТаблицаОперацийСДенежнымиСредствамиКомиссия" id="122">
+									<DataPath>ТаблицаОперацийСДенежнымиСредствами.Комиссия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОперацийСДенежнымиСредствамиКомиссияКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ТаблицаОперацийСДенежнымиСредствамиКомиссияРасширеннаяПодсказка" id="124"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаТаблицаЗагрузкиСовершенныхСделок" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Совершенные сделки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница таблица загрузки совершенных сделок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаТаблицаЗагрузкиСовершенныхСделокРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<Table name="ТаблицаСовершенныхСделок" id="15">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаСовершенныхСделок</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаСовершенныхСделокКонтекстноеМеню" id="16"/>
+							<AutoCommandBar name="ТаблицаСовершенныхСделокКоманднаяПанель" id="17">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СоздатьАктивы" id="72">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьАктивы</CommandName>
+										<ExtendedTooltip name="СоздатьАктивыРасширеннаяПодсказка" id="73"/>
+									</Button>
+									<Button name="ТаблицаСовершенныхСделокСоздатьДокументы" id="74">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьДокументы</CommandName>
+										<ExtendedTooltip name="ТаблицаСовершенныхСделокСоздатьДокументыРасширеннаяПодсказка" id="75"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаСовершенныхСделокРасширеннаяПодсказка" id="18"/>
+							<SearchStringAddition name="ТаблицаСовершенныхСделокСтрокаПоиска" id="19">
+								<AdditionSource>
+									<Item>ТаблицаСовершенныхСделок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСовершенныхСделокСтрокаПоискаКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ТаблицаСовершенныхСделокСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаСовершенныхСделокСостояниеПросмотра" id="22">
+								<AdditionSource>
+									<Item>ТаблицаСовершенныхСделок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСовершенныхСделокСостояниеПросмотраКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ТаблицаСовершенныхСделокСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаСовершенныхСделокУправлениеПоиском" id="25">
+								<AdditionSource>
+									<Item>ТаблицаСовершенныхСделок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСовершенныхСделокУправлениеПоискомКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ТаблицаСовершенныхСделокУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаСовершенныхСделокНомерСделки" id="28">
+									<DataPath>ТаблицаСовершенныхСделок.НомерСделки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокНомерСделкиКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокНомерСделкиРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокНомерПоручения" id="31">
+									<DataPath>ТаблицаСовершенныхСделок.НомерПоручения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокНомерПорученияКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокНомерПорученияРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокДатаВремяСделки" id="34">
+									<DataPath>ТаблицаСовершенныхСделок.ДатаВремяСделки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокДатаВремяСделкиКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокДатаВремяСделкиРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокДокументСделки" id="64">
+									<DataPath>ТаблицаСовершенныхСделок.ДокументСделки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокДокументСделкиКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокДокументСделкиРасширеннаяПодсказка" id="66"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокВидСделки" id="37">
+									<DataPath>ТаблицаСовершенныхСделок.ВидСделки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокВидСделкиКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокВидСделкиРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокСокращенноеНаименованиеАктива" id="40">
+									<DataPath>ТаблицаСовершенныхСделок.СокращенноеНаименованиеАктива</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокСокращенноеНаименованиеАктиваКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокСокращенноеНаименованиеАктиваРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокТикерАктива" id="43">
+									<DataPath>ТаблицаСовершенныхСделок.ТикерАктива</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокТикерАктиваКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокТикерАктиваРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокАктив" id="67">
+									<DataPath>ТаблицаСовершенныхСделок.Актив</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокАктивКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокАктивРасширеннаяПодсказка" id="69"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокЦенаЗаЕдиницу" id="46">
+									<DataPath>ТаблицаСовершенныхСделок.ЦенаЗаЕдиницу</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокЦенаЗаЕдиницуКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокЦенаЗаЕдиницуРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокВалюта" id="49">
+									<DataPath>ТаблицаСовершенныхСделок.Валюта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокВалютаКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокВалютаРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокКоличество" id="52">
+									<DataPath>ТаблицаСовершенныхСделок.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокКоличествоКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокКоличествоРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокСуммаБезНКД" id="55">
+									<DataPath>ТаблицаСовершенныхСделок.СуммаБезНКД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокСуммаБезНКДКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокСуммаБезНКДРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокНКД" id="58">
+									<DataPath>ТаблицаСовершенныхСделок.НКД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокНКДКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокНКДРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ТаблицаСовершенныхСделокКомиссияБрокера" id="61">
+									<DataPath>ТаблицаСовершенныхСделок.КомиссияБрокера</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСовершенныхСделокКомиссияБрокераКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокКомиссияБрокераРасширеннаяПодсказка" id="63"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаДвиженийВТБ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТабличныйДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличный документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСовершенныхСделок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица совершенных сделок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерСделки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сделки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерПоручения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер поручения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаВремяСделки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата время сделки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидСделки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид сделки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СокращенноеНаименованиеАктива" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сокращенное наименование актива</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТикерАктива" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тикер актива</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЦенаЗаЕдиницу" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена за единицу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаБезНКД" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма без НКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="НКД" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КомиссияБрокера" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комиссия брокера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументСделки" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ сделки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПриобртениеАктива</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПродажаАктива</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Актив" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актив</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Активы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаОперацийСДенежнымиСредствами" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица операций с денежными средствами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерРаспоряжения" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер распоряжения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подано" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подано</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Исполнено" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СчетОткуда" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет откуда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СчетКуда" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет куда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаКИсполнению" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма к исполнению</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Налог" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налог</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комиссия" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комиссия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументБД" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ БД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПополнениеВыводСБрокерскогоСчета</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьТабличныйДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать табличный документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать табличный документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьТабличныйДокумент</Action>
+		</Command>
+		<Command name="СоздатьАктивы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать активы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать активы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьАктивы</Action>
+		</Command>
+		<Command name="СоздатьДокументы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументы</Action>
+		</Command>
+		<Command name="СоздатьДокументыДС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы ДС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы ДС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументыДС</Action>
+		</Command>
+	</Commands>
+</Form>
