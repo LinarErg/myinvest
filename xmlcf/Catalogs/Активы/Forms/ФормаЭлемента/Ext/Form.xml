@@ -174,6 +174,16 @@
 							<ContextMenu name="ОтрасльКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ОтрасльРасширеннаяПодсказка" id="15"/>
 						</InputField>
+						<InputField name="БазовыйАктив" id="82">
+							<DataPath>Объект.БазовыйАктив</DataPath>
+							<ContextMenu name="БазовыйАктивКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="БазовыйАктивРасширеннаяПодсказка" id="84"/>
+						</InputField>
+						<InputField name="БазоваяВалюта" id="85">
+							<DataPath>Объект.БазоваяВалюта</DataPath>
+							<ContextMenu name="БазоваяВалютаКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="БазоваяВалютаРасширеннаяПодсказка" id="87"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаСтраницаДанныеАкций" id="38">
@@ -211,6 +221,77 @@
 							<ContextMenu name="НоминалКонтекстноеМеню" id="20"/>
 							<ExtendedTooltip name="НоминалРасширеннаяПодсказка" id="21"/>
 						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКомиссии" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индивидуальные комиссии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа комиссии</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКомиссииРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<Table name="ИндивидуальныеКомиссии" id="60">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ИндивидуальныеКомиссии</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИндивидуальныеКомиссииКонтекстноеМеню" id="61"/>
+							<AutoCommandBar name="ИндивидуальныеКомиссииКоманднаяПанель" id="62"/>
+							<ExtendedTooltip name="ИндивидуальныеКомиссииРасширеннаяПодсказка" id="63"/>
+							<SearchStringAddition name="ИндивидуальныеКомиссииСтрокаПоиска" id="64">
+								<AdditionSource>
+									<Item>ИндивидуальныеКомиссии</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИндивидуальныеКомиссииСтрокаПоискаКонтекстноеМеню" id="65"/>
+								<ExtendedTooltip name="ИндивидуальныеКомиссииСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИндивидуальныеКомиссииСостояниеПросмотра" id="67">
+								<AdditionSource>
+									<Item>ИндивидуальныеКомиссии</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИндивидуальныеКомиссииСостояниеПросмотраКонтекстноеМеню" id="68"/>
+								<ExtendedTooltip name="ИндивидуальныеКомиссииСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИндивидуальныеКомиссииУправлениеПоиском" id="70">
+								<AdditionSource>
+									<Item>ИндивидуальныеКомиссии</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИндивидуальныеКомиссииУправлениеПоискомКонтекстноеМеню" id="71"/>
+								<ExtendedTooltip name="ИндивидуальныеКомиссииУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИндивидуальныеКомиссииНомерСтроки" id="73">
+									<DataPath>Объект.ИндивидуальныеКомиссии.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИндивидуальныеКомиссииНомерСтрокиКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ИндивидуальныеКомиссииНомерСтрокиРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+								<InputField name="ИндивидуальныеКомиссииБрокер" id="76">
+									<DataPath>Объект.ИндивидуальныеКомиссии.Брокер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИндивидуальныеКомиссииБрокерКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ИндивидуальныеКомиссииБрокерРасширеннаяПодсказка" id="78"/>
+								</InputField>
+								<InputField name="ИндивидуальныеКомиссииПроцентКомиссии" id="79">
+									<DataPath>Объект.ИндивидуальныеКомиссии.ПроцентКомиссии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИндивидуальныеКомиссииПроцентКомиссииКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ИндивидуальныеКомиссииПроцентКомиссииРасширеннаяПодсказка" id="81"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 			</ChildItems>

@@ -13,10 +13,11 @@
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.Отчеты_</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Активы</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Отрасли</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиДенежныхСредств</xr:Item>
 			</Content>
 		</Properties>
