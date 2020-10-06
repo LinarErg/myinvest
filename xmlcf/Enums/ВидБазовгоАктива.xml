@@ -50,13 +50,13 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="ca0859da-8756-4183-baa4-7c8ab0d8537f">
+			<EnumValue uuid="6256aba0-7669-4a5d-830a-703cf7e1b843">
 				<Properties>
-					<Name>Облигации</Name>
+					<Name>Валюта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Облигации</v8:content>
+							<v8:content>Валюта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -69,6 +69,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Золото</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ca0859da-8756-4183-baa4-7c8ab0d8537f">
+				<Properties>
+					<Name>Облигации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облигации</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

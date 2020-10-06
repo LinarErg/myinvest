@@ -16,9 +16,11 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПополнениеВыводСБрокерскогоСчета</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобртениеАктива</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеАктива</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаАктива</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеВалюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаВалюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ЖурналОбротов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

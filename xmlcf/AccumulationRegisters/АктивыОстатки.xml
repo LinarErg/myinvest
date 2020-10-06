@@ -249,7 +249,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:DocumentRef.ПриобртениеАктива</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриобретениеАктива</v8:Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:Type>cfg:DocumentRef.ПродажаАктива</v8:Type>
 						<v8:StringQualifiers>

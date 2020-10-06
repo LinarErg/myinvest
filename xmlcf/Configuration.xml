@@ -213,18 +213,21 @@
 			<Catalog>Рынок</Catalog>
 			<Catalog>СписокТорговыхСистем</Catalog>
 			<Document>ПополнениеВыводСБрокерскогоСчета</Document>
-			<Document>ПриобртениеАктива</Document>
-			<Document>ПродажаАктива</Document>
-			<Document>Удалить_ПриходРасходДенежныхСредств</Document>
+			<Document>ПриобретениеАктива</Document>
 			<Document>ПриобретениеВалюты</Document>
+			<Document>ПродажаАктива</Document>
+			<Document>ПродажаВалюты</Document>
+			<Document>Удалить_ПриходРасходДенежныхСредств</Document>
+			<DocumentJournal>ЖурналОбротов</DocumentJournal>
 			<Enum>Биржа</Enum>
 			<Enum>ВидАктива</Enum>
+			<Enum>ВидБазовгоАктива</Enum>
 			<Enum>ВидЗагрузкиВТБ</Enum>
 			<Enum>ВидЗагрузкиТинькофф</Enum>
-			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
 			<Enum>ВидОперацииПополнениеВыводСБрокерскогоСчета</Enum>
-			<Enum>ВидБазовгоАктива</Enum>
+			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
 			<Report>ОстаткиДенежныхСредств</Report>
+			<Report>Портфель</Report>
 			<DataProcessor>ГлавнаяСтраница</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийВТБ</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>

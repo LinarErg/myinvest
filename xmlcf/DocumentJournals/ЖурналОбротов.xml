@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DocumentJournal uuid="39303865-1bf3-42c9-bcb4-685352cc044d">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ЖурналОбротов" category="Selection">
+				<xr:TypeId>4206f65b-79ef-43f0-9f02-433070d2c22e</xr:TypeId>
+				<xr:ValueId>faf92937-b69b-4553-acda-4f6ed3e9e3cb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ЖурналОбротов" category="List">
+				<xr:TypeId>61e24934-9f58-46b2-b82e-7054b1aae620</xr:TypeId>
+				<xr:ValueId>8d0ff75f-2436-4220-a0f0-28d551599385</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ЖурналОбротов" category="Manager">
+				<xr:TypeId>1fd4ff06-ff48-4b39-9cf4-478f1ec7647e</xr:TypeId>
+				<xr:ValueId>3adfe3f9-6940-43d1-b7de-4a3ce1564ce8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЖурналОбротов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал обротов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПополнениеВыводСБрокерскогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеАктива</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеВалюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаАктива</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаВалюты</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="837f5b93-57a5-43de-bae4-ad3fdd68d8c4">
+				<Properties>
+					<Name>Портфель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Портфель</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПополнениеВыводСБрокерскогоСчета.Attribute.Портфель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеАктива.Attribute.Портфель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеВалюты.Attribute.Портфель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаАктива.Attribute.Портфель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаВалюты.Attribute.Портфель</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

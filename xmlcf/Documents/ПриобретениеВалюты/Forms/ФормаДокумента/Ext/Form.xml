@@ -36,12 +36,41 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Портфель" id="7">
-			<DataPath>Объект.Портфель</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ПортфельКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ПортфельРасширеннаяПодсказка" id="9"/>
-		</InputField>
+		<UsualGroup name="ГруппаШапка" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<InputField name="Портфель" id="7">
+					<DataPath>Объект.Портфель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПортфельКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПортфельРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="НомерСделки" id="47">
+					<DataPath>Объект.НомерСделки</DataPath>
+					<ContextMenu name="НомерСделкиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="НомерСделкиРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="НомерПоручения" id="50">
+					<DataPath>Объект.НомерПоручения</DataPath>
+					<ContextMenu name="НомерПорученияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="НомерПорученияРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаСписание" id="41">
 			<Title>
 				<v8:item>
@@ -70,6 +99,11 @@
 					<ContextMenu name="ВалютаСписанияКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ВалютаСписанияРасширеннаяПодсказка" id="12"/>
 				</InputField>
+				<InputField name="Цена" id="53">
+					<DataPath>Объект.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="55"/>
+				</InputField>
 				<InputField name="СуммаСписания" id="16">
 					<DataPath>Объект.СуммаСписания</DataPath>
 					<Title>
@@ -81,18 +115,6 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СуммаСписанияКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="СуммаСписанияРасширеннаяПодсказка" id="18"/>
-				</InputField>
-				<InputField name="КоличествоСписания" id="22">
-					<DataPath>Объект.КоличествоСписания</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Количество</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КоличествоСписанияКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="КоличествоСписанияРасширеннаяПодсказка" id="24"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -135,18 +157,6 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СуммаПриобретенияКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="СуммаПриобретенияРасширеннаяПодсказка" id="21"/>
-				</InputField>
-				<InputField name="КоличествоПриобретения" id="25">
-					<DataPath>Объект.КоличествоПриобретения</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Количество</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КоличествоПриобретенияКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="КоличествоПриобретенияРасширеннаяПодсказка" id="27"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -205,6 +215,12 @@
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Комментарий" id="56">
+			<DataPath>Объект.Комментарий</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="58"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -218,4 +234,13 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.ОстаткиДенежныхСредств.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>
