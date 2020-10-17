@@ -195,6 +195,8 @@
 			<CommonPicture>Справочник_</CommonPicture>
 			<CommonPicture>ВводДанных</CommonPicture>
 			<CommonPicture>Отчеты_</CommonPicture>
+			<CommonPicture>Инвертировать</CommonPicture>
+			<CommonPicture>ОтметитьСледующий</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
@@ -212,6 +214,7 @@
 			<Catalog>РежимТоргов</Catalog>
 			<Catalog>Рынок</Catalog>
 			<Catalog>СписокТорговыхСистем</Catalog>
+			<Catalog>Эмитент</Catalog>
 			<Document>ПополнениеВыводСБрокерскогоСчета</Document>
 			<Document>ПриобретениеАктива</Document>
 			<Document>ПриобретениеВалюты</Document>
@@ -235,6 +238,7 @@
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
 			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
+			<InformationRegister>СоответствиеТикеровВалюты</InformationRegister>
 			<AccumulationRegister>АктивыОстатки</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>

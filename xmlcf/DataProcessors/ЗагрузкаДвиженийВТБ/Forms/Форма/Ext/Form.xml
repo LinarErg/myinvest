@@ -224,15 +224,80 @@
 							<AutoCommandBar name="ТаблицаСовершенныхСделокКоманднаяПанель" id="17">
 								<Autofill>false</Autofill>
 								<ChildItems>
-									<Button name="СоздатьАктивы" id="72">
+									<Popup name="ТаблицаСовершенныхСделокПодменюСоздать" id="219">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Таблица совершенных сделок подменю создать</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаСовершенныхСделокПодменюСоздатьРасширеннаяПодсказка" id="220"/>
+										<ChildItems>
+											<Button name="ТаблицаСовершенныхСделокСоздатьДокументы" id="74">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СоздатьДокументы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.Document</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ТаблицаСовершенныхСделокСоздатьДокументыРасширеннаяПодсказка" id="75"/>
+											</Button>
+											<Button name="СоздатьАктивы" id="72">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СоздатьАктивы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.Catalog</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СоздатьАктивыРасширеннаяПодсказка" id="73"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="ТаблицаСовершенныхСделокОбрабатыватьОтметитьВсе" id="221">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.СоздатьАктивы</CommandName>
-										<ExtendedTooltip name="СоздатьАктивыРасширеннаяПодсказка" id="73"/>
+										<CommandName>Form.Command.ОбрабатыватьОтметитьВсе</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаСовершенныхСделокОбрабатыватьОтметитьВсеРасширеннаяПодсказка" id="222"/>
 									</Button>
-									<Button name="ТаблицаСовершенныхСделокСоздатьДокументы" id="74">
+									<Button name="ТаблицаСовершенныхСделокОбрабатыватьСнятьВсеОтметки" id="223">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.СоздатьДокументы</CommandName>
-										<ExtendedTooltip name="ТаблицаСовершенныхСделокСоздатьДокументыРасширеннаяПодсказка" id="75"/>
+										<CommandName>Form.Command.ОбрабатыватьСнятьВсеОтметки</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаСовершенныхСделокОбрабатыватьСнятьВсеОтметкиРасширеннаяПодсказка" id="224"/>
+									</Button>
+									<Button name="ТаблицаСовершенныхСделокОбрабатыватьИнвертировать" id="225">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбрабатыватьИнвертировать</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.Инвертировать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаСовершенныхСделокОбрабатыватьИнвертироватьРасширеннаяПодсказка" id="226"/>
+									</Button>
+									<Button name="ТаблицаСовершенныхСделокОбрабатыватьОтметитьОдинСледующий" id="227">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбрабатыватьОтметитьОдинСледующий</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ОтметитьСледующий</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаСовершенныхСделокОбрабатыватьОтметитьОдинСледующийРасширеннаяПодсказка" id="228"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -262,6 +327,14 @@
 								<ExtendedTooltip name="ТаблицаСовершенныхСделокУправлениеПоискомРасширеннаяПодсказка" id="27"/>
 							</SearchControlAddition>
 							<ChildItems>
+								<CheckBoxField name="ТаблицаСовершенныхСделокОбрабатывать" id="214">
+									<DataPath>ТаблицаСовершенныхСделок.Обрабатывать</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаСовершенныхСделокОбрабатыватьКонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="ТаблицаСовершенныхСделокОбрабатыватьРасширеннаяПодсказка" id="216"/>
+								</CheckBoxField>
 								<InputField name="ТаблицаСовершенныхСделокДокументСделки" id="208">
 									<DataPath>ТаблицаСовершенныхСделок.ДокументСделки</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -600,6 +673,18 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Активы</v8:Type>
+						<v8:Type>cfg:CatalogRef.Валюта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обрабатывать" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обрабатывать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -852,6 +937,66 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьДокументыДС</Action>
+		</Command>
+		<Command name="ОбрабатыватьОтметитьВсе" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать отметить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать отметить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтметитьВсе</Action>
+		</Command>
+		<Command name="ОбрабатыватьСнятьВсеОтметки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать снять все отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать снять все отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбрабатыватьСнятьВсеОтметки</Action>
+		</Command>
+		<Command name="ОбрабатыватьИнвертировать" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать инвертировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать инвертировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбрабатыватьИнвертировать</Action>
+		</Command>
+		<Command name="ОбрабатыватьОтметитьОдинСледующий" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать отметить один следующий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обрабатывать отметить один следующий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбрабатыватьОтметитьОдинСледующий</Action>
 		</Command>
 	</Commands>
 </Form>

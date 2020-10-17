@@ -17,6 +17,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТекущаяЦенаАктива</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГлавнаяСтраница</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствиеТикеровВалюты</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

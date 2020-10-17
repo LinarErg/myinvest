@@ -109,6 +109,7 @@
 				</LabelField>
 				<Button name="КомандаОбновитьДанныеСБиржи" id="53">
 					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
 					<CommandName>Form.Command.КомандаОбновитьДанныеСБиржи</CommandName>
 					<Picture>
 						<xr:Ref>StdPicture.Refresh</xr:Ref>
@@ -183,6 +184,11 @@
 							<DataPath>Объект.БазоваяВалюта</DataPath>
 							<ContextMenu name="БазоваяВалютаКонтекстноеМеню" id="86"/>
 							<ExtendedTooltip name="БазоваяВалютаРасширеннаяПодсказка" id="87"/>
+						</InputField>
+						<InputField name="Эмитент" id="88">
+							<DataPath>Объект.Эмитент</DataPath>
+							<ContextMenu name="ЭмитентКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="ЭмитентРасширеннаяПодсказка" id="90"/>
 						</InputField>
 					</ChildItems>
 				</Page>
