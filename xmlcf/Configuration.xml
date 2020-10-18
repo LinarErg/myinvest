@@ -189,6 +189,7 @@
 			<Subsystem>Вспомогательные</Subsystem>
 			<Subsystem>Настройка</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
+			<Subsystem>Портфель</Subsystem>
 			<Subsystem>Примеры</Subsystem>
 			<Subsystem>Справочники</Subsystem>
 			<CommonPicture>Работа</CommonPicture>
@@ -197,6 +198,8 @@
 			<CommonPicture>Отчеты_</CommonPicture>
 			<CommonPicture>Инвертировать</CommonPicture>
 			<CommonPicture>ОтметитьСледующий</CommonPicture>
+			<CommonPicture>Портфель</CommonPicture>
+			<CommonPicture>ПустаяКартинкаЭмитента</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
@@ -235,6 +238,7 @@
 			<DataProcessor>ЗагрузкаДвиженийВТБ</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
 			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
+			<DataProcessor>Портфель</DataProcessor>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
 			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>

@@ -20,63 +20,154 @@
 					<v8:content>Группа имя тикер</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>Vertical</Group>
+			<Group>AlwaysHorizontal</Group>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИмяТикерРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
-				<InputField name="Тикер" id="16">
-					<DataPath>Объект.Тикер</DataPath>
-					<ContextMenu name="ТикерКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ТикерРасширеннаяПодсказка" id="18"/>
-				</InputField>
-				<InputField name="Наименование" id="4">
-					<DataPath>Объект.Description</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-				</InputField>
-				<InputField name="СокращенноеНаименование" id="40">
-					<DataPath>Объект.СокращенноеНаименование</DataPath>
-					<ContextMenu name="СокращенноеНаименованиеКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="СокращенноеНаименованиеРасширеннаяПодсказка" id="42"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаВидВалюта" id="43">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа вид валюта</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа вид валюта</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаВидВалютаРасширеннаяПодсказка" id="44"/>
-			<ChildItems>
-				<InputField name="Вид" id="7">
-					<DataPath>Объект.Вид</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ВидКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="9"/>
-				</InputField>
-				<InputField name="Валюта" id="10">
-					<DataPath>Объект.Валюта</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ВалютаКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="12"/>
-				</InputField>
-				<InputField name="Биржа" id="55">
-					<DataPath>Объект.Биржа</DataPath>
-					<ContextMenu name="БиржаКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="БиржаРасширеннаяПодсказка" id="57"/>
-				</InputField>
+				<UsualGroup name="ГруппаИмяТикерЛево" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя тикер лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя тикер лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИмяТикерЛевоРасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<InputField name="Тикер" id="16">
+							<DataPath>Объект.Тикер</DataPath>
+							<ContextMenu name="ТикерКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ТикерРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="СокращенноеНаименование" id="40">
+							<DataPath>Объект.СокращенноеНаименование</DataPath>
+							<ContextMenu name="СокращенноеНаименованиеКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="СокращенноеНаименованиеРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<UsualGroup name="ГруппаВидВалюта" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид валюта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид валюта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидВалютаРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<InputField name="Вид" id="7">
+									<DataPath>Объект.Вид</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Валюта" id="10">
+									<DataPath>Объект.Валюта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВалютаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="Биржа" id="55">
+									<DataPath>Объект.Биржа</DataPath>
+									<ContextMenu name="БиржаКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="БиржаРасширеннаяПодсказка" id="57"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИмяТикерПраво" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя тикер право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя тикер право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИмяТикерПравоРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаЭмитента" id="95">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка эмитента</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.ПустаяКартинкаЭмитента</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаЭмитентаКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="КартинкаЭмитентаРасширеннаяПодсказка" id="97"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаИмяТикерПравоКнопки" id="98">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа имя тикер право кнопки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа имя тикер право кнопки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИмяТикерПравоКнопкиРасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<Button name="ЗагрузитьКартинку" id="100">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ЗагрузитьКартинку</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Change</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ЗагрузитьКартинкуРасширеннаяПодсказка" id="101"/>
+								</Button>
+								<Button name="УдалитьКартинку" id="102">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.УдалитьКартинку</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCrossIcon</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="УдалитьКартинкуРасширеннаяПодсказка" id="103"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаЦены" id="45">
@@ -349,6 +440,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаОбновитьДанныеСБиржи</Action>
+		</Command>
+		<Command name="ЗагрузитьКартинку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьКартинку</Action>
+		</Command>
+		<Command name="УдалитьКартинку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьКартинку</Action>
 		</Command>
 	</Commands>
 </Form>
