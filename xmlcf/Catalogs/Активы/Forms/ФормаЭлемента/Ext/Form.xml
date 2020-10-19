@@ -5,6 +5,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаИмяТикер" id="22">
@@ -112,21 +113,12 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаИмяТикерПравоРасширеннаяПодсказка" id="94"/>
 					<ChildItems>
-						<PictureDecoration name="КартинкаЭмитента" id="95">
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Картинка эмитента</v8:content>
-								</v8:item>
-							</Title>
-							<PictureSize>Proportionally</PictureSize>
-							<Picture>
-								<xr:Ref>CommonPicture.ПустаяКартинкаЭмитента</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="КартинкаЭмитентаКонтекстноеМеню" id="96"/>
-							<ExtendedTooltip name="КартинкаЭмитентаРасширеннаяПодсказка" id="97"/>
-						</PictureDecoration>
+						<PictureField name="СсылкаНаКартинку" id="104">
+							<DataPath>СсылкаНаКартинку</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="СсылкаНаКартинкуКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="СсылкаНаКартинкуРасширеннаяПодсказка" id="106"/>
+						</PictureField>
 						<UsualGroup name="ГруппаИмяТикерПравоКнопки" id="98">
 							<Title>
 								<v8:item>
@@ -422,6 +414,21 @@
 			</Title>
 			<Type>
 				<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНаКартинку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на картинку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

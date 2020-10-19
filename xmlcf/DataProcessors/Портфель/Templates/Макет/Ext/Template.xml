@@ -131,12 +131,7 @@
 		<index>15</index>
 		<row>
 			<c>
-				<i>1</i>
-				<c>
-					<f>7</f>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>9</f>
 					<parameter>КоличествоИСредняя</parameter>
@@ -161,12 +156,7 @@
 		<index>16</index>
 		<row>
 			<c>
-				<i>1</i>
-				<c>
-					<f>7</f>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>7</f>
 				</c>
@@ -225,8 +215,25 @@
 			</c>
 		</row>
 	</rowsItem>
+	<drawing>
+		<drawingType>Picture</drawingType>
+		<id>3</id>
+		<formatIndex>11</formatIndex>
+		<beginRow>14</beginRow>
+		<beginRowOffset>0</beginRowOffset>
+		<endRow>16</endRow>
+		<endRowOffset>39</endRowOffset>
+		<beginColumn>1</beginColumn>
+		<beginColumnOffset>0</beginColumnOffset>
+		<endColumn>1</endColumn>
+		<endColumnOffset>177</endColumnOffset>
+		<autoSize>false</autoSize>
+		<pictureSize>Proportionally</pictureSize>
+		<zOrder>1</zOrder>
+		<pictureIndex>1</pictureIndex>
+	</drawing>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>11</defaultFormatIndex>
+	<defaultFormatIndex>12</defaultFormatIndex>
 	<height>19</height>
 	<vgRows>19</vgRows>
 	<merge>
@@ -238,6 +245,11 @@
 		<r>12</r>
 		<c>1</c>
 		<w>4</w>
+	</merge>
+	<merge>
+		<r>14</r>
+		<c>1</c>
+		<h>2</h>
 	</merge>
 	<merge>
 		<r>14</r>
@@ -305,6 +317,9 @@
 	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 	</line>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentDrawingLineType">None</v8ui:style>
+	</line>
 	<font faceName="Times New Roman" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Times New Roman" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Times New Roman" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
@@ -345,6 +360,13 @@
 		<bottomBorder>1</bottomBorder>
 	</format>
 	<format>
+		<drawingBorder>2</drawingBorder>
+	</format>
+	<format>
 		<width>72</width>
 	</format>
+	<picture>
+		<index>0</index>
+		<picture/>
+	</picture>
 </document>

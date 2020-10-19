@@ -207,6 +207,9 @@
 			<CommonModule>РасчетДиверсификацииСервер</CommonModule>
 			<CommonModule>ЗагрузкаСМосковскойБиржиКлиент</CommonModule>
 			<CommonModule>ЗагрузкаСМосковскойБиржиСервер</CommonModule>
+			<CommonModule>ЗагрузкаКурсаВалютСервер</CommonModule>
+			<EventSubscription>ДатаЗапрета</EventSubscription>
+			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<DefinedType>Сумма10</DefinedType>
 			<Catalog>Активы</Catalog>
 			<Catalog>Брокер</Catalog>
@@ -218,6 +221,8 @@
 			<Catalog>Рынок</Catalog>
 			<Catalog>СписокТорговыхСистем</Catalog>
 			<Catalog>Эмитент</Catalog>
+			<Catalog>Страны</Catalog>
+			<Document>КорректировкаОстатковДС</Document>
 			<Document>ПополнениеВыводСБрокерскогоСчета</Document>
 			<Document>ПриобретениеАктива</Document>
 			<Document>ПриобретениеВалюты</Document>
@@ -232,6 +237,7 @@
 			<Enum>ВидЗагрузкиТинькофф</Enum>
 			<Enum>ВидОперацииПополнениеВыводСБрокерскогоСчета</Enum>
 			<Enum>ВидыОперацийПриходРасходДенежныхСредств</Enum>
+			<Enum>РазрезыДиверсификации</Enum>
 			<Report>ОстаткиДенежныхСредств</Report>
 			<Report>Портфель</Report>
 			<DataProcessor>ГлавнаяСтраница</DataProcessor>
@@ -243,6 +249,8 @@
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
 			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
 			<InformationRegister>СоответствиеТикеровВалюты</InformationRegister>
+			<InformationRegister>КурсыВалют</InformationRegister>
+			<InformationRegister>ДатаЗапретаИзменений</InformationRegister>
 			<AccumulationRegister>АктивыОстатки</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>

@@ -27,6 +27,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Рынок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СписокТорговыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Эмитент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Страны</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

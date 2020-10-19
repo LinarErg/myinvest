@@ -102,6 +102,11 @@
 						<Event name="OnChange">АктивПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="ВалютаСделки" id="49">
+					<DataPath>Объект.ВалютаСделки</DataPath>
+					<ContextMenu name="ВалютаСделкиКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ВалютаСделкиРасширеннаяПодсказка" id="51"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСуммы" id="26">

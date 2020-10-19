@@ -21,7 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеВалюты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаВалюты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ЖурналОбротов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">becc4d1d-20b7-4dde-a209-8b849ca4a5c0</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковДС</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
