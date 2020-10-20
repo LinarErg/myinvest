@@ -47,9 +47,14 @@
 		<Metadata name="Catalog.Валюта.Form.ФормаЭлемента.Form" id="7f7162e1-661f-43b0-a7b6-7257821f9ae2.0" configVersion="1eae7fc7ff8c8e47a59c03b7c7cc5ff100000000"/>
 		<Metadata name="Catalog.ЗначенияСвойствАктивов" id="16a9c949-e80e-403c-89a1-f158c7488056" configVersion="eb5269ebc8b1cc4ba93e7bd1fee1e76b00000000"/>
 		<Metadata name="Catalog.Отрасли" id="fd585eff-6d58-460c-b032-62ddef30e55e" configVersion="a0502aa81812064aacdc44dee898e44b00000000"/>
-		<Metadata name="Catalog.Портфель" id="2fdef067-9023-477e-9e2f-cc5902b1cc0c" configVersion="1ef5bc230e90074595fff5edfc462c0900000000">
+		<Metadata name="Catalog.Портфель" id="2fdef067-9023-477e-9e2f-cc5902b1cc0c" configVersion="6a59964fd074f54fb0e08dd13c4bbd7500000000">
+			<Metadata name="Catalog.Портфель.Attribute.Токен" id="0741a280-ac1c-4485-b2ca-5fa28c08d0aa"/>
 			<Metadata name="Catalog.Портфель.Attribute.Брокер" id="616aa156-546b-40c1-9ff6-e6b5b25d6a11"/>
 		</Metadata>
+		<Metadata name="Catalog.Портфель.Form.ФормаСписка" id="e3c80af0-8989-47c6-b4a8-614aab30c6bf" configVersion="8f5ac98b95e6654c83bdc986e4096fca00000000"/>
+		<Metadata name="Catalog.Портфель.Form.ФормаСписка.Form" id="e3c80af0-8989-47c6-b4a8-614aab30c6bf.0" configVersion="c57a1614d0a84941a80647f78c8c63ef00000000"/>
+		<Metadata name="Catalog.Портфель.Form.ФормаЭлемента" id="5fbcbe1c-c31c-4024-8a80-0451ec04a9c8" configVersion="3dafc1a80affab45ac71374e49d55f8600000000"/>
+		<Metadata name="Catalog.Портфель.Form.ФормаЭлемента.Form" id="5fbcbe1c-c31c-4024-8a80-0451ec04a9c8.0" configVersion="58d69d85cd3b42498d148ebc42eb175a00000000"/>
 		<Metadata name="Catalog.РежимТоргов" id="d48cdf88-3f9d-44d4-b10f-2553538de07a" configVersion="e28df1c583127f42967c2b99408cdebd00000000">
 			<Metadata name="Catalog.РежимТоргов.Attribute.Заголовок" id="572d433a-9e17-4992-b8b8-1ab93af693dc"/>
 		</Metadata>
