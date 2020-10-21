@@ -208,6 +208,7 @@
 			<CommonModule>ЗагрузкаСМосковскойБиржиКлиент</CommonModule>
 			<CommonModule>ЗагрузкаСМосковскойБиржиСервер</CommonModule>
 			<CommonModule>ЗагрузкаКурсаВалютСервер</CommonModule>
+			<CommonModule>ИнтеграцияСТинькоффПоAPIСервер</CommonModule>
 			<EventSubscription>ДатаЗапрета</EventSubscription>
 			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<DefinedType>Сумма10</DefinedType>

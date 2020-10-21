@@ -231,6 +231,28 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="ГруппаТест" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тест</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тест</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТестРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<Button name="Команда1" id="81">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Команда1</CommandName>
+							<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="82"/>
+						</Button>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -516,6 +538,9 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьДокументы</Action>
+		</Command>
+		<Command name="Команда1" id="4">
+			<Action>Команда1</Action>
 		</Command>
 	</Commands>
 </Form>
