@@ -17,6 +17,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДвиженийВТБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДвиженийТинькофф</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДвиженийТинькоффПоAPI</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

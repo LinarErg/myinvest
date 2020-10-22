@@ -212,6 +212,7 @@
 			<EventSubscription>ДатаЗапрета</EventSubscription>
 			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<DefinedType>Сумма10</DefinedType>
+			<Constant>ПортфельПоУмолчанию</Constant>
 			<Catalog>Активы</Catalog>
 			<Catalog>Брокер</Catalog>
 			<Catalog>Валюта</Catalog>
@@ -244,14 +245,16 @@
 			<DataProcessor>ГлавнаяСтраница</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийВТБ</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
+			<DataProcessor>ЗагрузкаДвиженийТинькоффПоAPI</DataProcessor>
 			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
 			<DataProcessor>Портфель</DataProcessor>
-			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
-			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
-			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
-			<InformationRegister>СоответствиеТикеровВалюты</InformationRegister>
-			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ДатаЗапретаИзменений</InformationRegister>
+			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
+			<InformationRegister>КурсыВалют</InformationRegister>
+			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
+			<InformationRegister>СоответствиеТикеровВалюты</InformationRegister>
+			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
+			<InformationRegister>СделкиТинькофф</InformationRegister>
 			<AccumulationRegister>АктивыОстатки</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>

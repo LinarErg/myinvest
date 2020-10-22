@@ -92,6 +92,46 @@
 									<ContextMenu name="БиржаКонтекстноеМеню" id="56"/>
 									<ExtendedTooltip name="БиржаРасширеннаяПодсказка" id="57"/>
 								</InputField>
+								<UsualGroup name="ГруппаFigi" id="110">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа figi</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа figi</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаFigiРасширеннаяПодсказка" id="111"/>
+									<ChildItems>
+										<InputField name="figi" id="107">
+											<DataPath>Объект.figi</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>FIGI</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="figiКонтекстноеМеню" id="108"/>
+											<ExtendedTooltip name="figiРасширеннаяПодсказка" id="109"/>
+										</InputField>
+										<Button name="ОбновитьFIGIпоТикеру" id="112">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ОбновитьFIGIпоТикеру</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Refresh</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ОбновитьFIGIпоТикеруРасширеннаяПодсказка" id="113"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -477,6 +517,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УдалитьКартинку</Action>
+		</Command>
+		<Command name="ОбновитьFIGIпоТикеру" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить FIGIпо тикеру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить FIGIпо тикеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьFIGIпоТикеру</Action>
 		</Command>
 	</Commands>
 </Form>
