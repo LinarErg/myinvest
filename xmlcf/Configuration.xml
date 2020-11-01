@@ -249,6 +249,7 @@
 			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькоффПоAPI</DataProcessor>
 			<DataProcessor>Портфель</DataProcessor>
+			<DataProcessor>Служенбные</DataProcessor>
 			<InformationRegister>ДатаЗапретаИзменений</InformationRegister>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
 			<InformationRegister>ИсторияДивидендов</InformationRegister>
