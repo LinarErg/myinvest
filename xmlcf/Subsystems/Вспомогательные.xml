@@ -22,7 +22,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КурсыВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаЗапретаИзменений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СделкиТинькофф</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">8822bbe2-53a0-4cb1-8a5d-235483abff4b</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияДивидендов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КупоныПоОблигациям</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

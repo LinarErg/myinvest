@@ -350,6 +350,11 @@
 							<ContextMenu name="НоминалКонтекстноеМеню" id="20"/>
 							<ExtendedTooltip name="НоминалРасширеннаяПодсказка" id="21"/>
 						</InputField>
+						<InputField name="ГодоваяДоходностьОтНоминала" id="114">
+							<DataPath>Объект.ГодоваяДоходностьОтНоминала</DataPath>
+							<ContextMenu name="ГодоваяДоходностьОтНоминалаКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ГодоваяДоходностьОтНоминалаРасширеннаяПодсказка" id="116"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаКомиссии" id="58">

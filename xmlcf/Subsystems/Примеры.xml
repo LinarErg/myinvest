@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаМБПример</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">db9e45dc-fe10-4aaf-b90f-0054e044468c</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

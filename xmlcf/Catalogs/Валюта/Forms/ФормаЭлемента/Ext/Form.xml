@@ -27,6 +27,11 @@
 			<ContextMenu name="КодДляЗагрузкиСЦБКонтекстноеМеню" id="10"/>
 			<ExtendedTooltip name="КодДляЗагрузкиСЦБРасширеннаяПодсказка" id="11"/>
 		</InputField>
+		<InputField name="Figi" id="12">
+			<DataPath>Объект.Figi</DataPath>
+			<ContextMenu name="FigiКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="FigiРасширеннаяПодсказка" id="14"/>
+		</InputField>
 		<Button name="ОбновитьКурс" id="7">
 			<Type>UsualButton</Type>
 			<CommandName>Form.Command.ОбновитьКурс</CommandName>

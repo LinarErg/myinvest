@@ -224,6 +224,7 @@
 			<Catalog>СписокТорговыхСистем</Catalog>
 			<Catalog>Эмитент</Catalog>
 			<Catalog>Страны</Catalog>
+			<Document>ВыплатаДивидендовКупонов</Document>
 			<Document>КорректировкаОстатковДС</Document>
 			<Document>ПополнениеВыводСБрокерскогоСчета</Document>
 			<Document>ПриобретениеАктива</Document>
@@ -242,21 +243,24 @@
 			<Enum>РазрезыДиверсификации</Enum>
 			<Report>ОстаткиДенежныхСредств</Report>
 			<Report>Портфель</Report>
+			<DataProcessor>ВосстановлениеПоследовательностиДвиженияАктивов</DataProcessor>
 			<DataProcessor>ГлавнаяСтраница</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийВТБ</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькофф</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийТинькоффПоAPI</DataProcessor>
-			<DataProcessor>ЗагрузкаМБПример</DataProcessor>
 			<DataProcessor>Портфель</DataProcessor>
 			<InformationRegister>ДатаЗапретаИзменений</InformationRegister>
 			<InformationRegister>ЗначенияСвойствАктивов</InformationRegister>
+			<InformationRegister>ИсторияДивидендов</InformationRegister>
+			<InformationRegister>КупоныПоОблигациям</InformationRegister>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ПроцентКомиссииБрокера</InformationRegister>
+			<InformationRegister>СделкиТинькофф</InformationRegister>
 			<InformationRegister>СоответствиеТикеровВалюты</InformationRegister>
 			<InformationRegister>ТекущаяЦенаАктива</InformationRegister>
-			<InformationRegister>СделкиТинькофф</InformationRegister>
 			<AccumulationRegister>АктивыОстатки</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
+			<AccumulationRegister>ВыплатыКупоновДивидендов</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваАктивов</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
