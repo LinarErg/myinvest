@@ -35,6 +35,11 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="НомерСделки" id="27">
+			<DataPath>Объект.НомерСделки</DataPath>
+			<ContextMenu name="НомерСделкиКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="НомерСделкиРасширеннаяПодсказка" id="29"/>
+		</InputField>
 		<InputField name="Портфель" id="7">
 			<DataPath>Объект.Портфель</DataPath>
 			<EditMode>EnterOnInput</EditMode>

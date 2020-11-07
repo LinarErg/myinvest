@@ -5,6 +5,15 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<InputField name="Портфель" id="66">
+			<DataPath>Объект.Портфель</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ПортфельКонтекстноеМеню" id="67"/>
+			<ExtendedTooltip name="ПортфельРасширеннаяПодсказка" id="68"/>
+			<Events>
+				<Event name="OnChange">ПортфельПриИзменении</Event>
+			</Events>
+		</InputField>
 		<Pages name="ГруппаСтраницы" id="1">
 			<Title>
 				<v8:item>
@@ -18,6 +27,7 @@
 					<v8:content>Группа страницы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<Page name="ГруппаАктивы" id="3">
@@ -36,10 +46,14 @@
 					<ExtendedTooltip name="ГруппаАктивыРасширеннаяПодсказка" id="4"/>
 					<ChildItems>
 						<Table name="СписокАктивы" id="5">
+							<Representation>Tree</Representation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<SelectionMode>SingleRow</SelectionMode>
+							<VerticalLines>false</VerticalLines>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>СписокАктивы</DataPath>
-							<RowPictureDataPath>СписокАктивы.DefaultPicture</RowPictureDataPath>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -54,7 +68,9 @@
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
 							<ContextMenu name="СписокАктивыКонтекстноеМеню" id="6"/>
-							<AutoCommandBar name="СписокАктивыКоманднаяПанель" id="7"/>
+							<AutoCommandBar name="СписокАктивыКоманднаяПанель" id="7">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
 							<ExtendedTooltip name="СписокАктивыРасширеннаяПодсказка" id="8"/>
 							<SearchStringAddition name="СписокАктивыСтрокаПоиска" id="9">
 								<AdditionSource>
@@ -80,27 +96,184 @@
 								<ContextMenu name="СписокАктивыУправлениеПоискомКонтекстноеМеню" id="16"/>
 								<ExtendedTooltip name="СписокАктивыУправлениеПоискомРасширеннаяПодсказка" id="17"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnGetDataAtServer">СписокАктивыПриПолученииДанныхНаСервере</Event>
+							</Events>
 							<ChildItems>
-								<LabelField name="СписокАктивыНаименование" id="18">
-									<DataPath>СписокАктивы.Наименование</DataPath>
-									<ContextMenu name="СписокАктивыНаименованиеКонтекстноеМеню" id="19"/>
-									<ExtendedTooltip name="СписокАктивыНаименованиеРасширеннаяПодсказка" id="20"/>
-								</LabelField>
-								<LabelField name="СписокАктивыВид" id="24">
-									<DataPath>СписокАктивы.Вид</DataPath>
-									<ContextMenu name="СписокАктивыВидКонтекстноеМеню" id="25"/>
-									<ExtendedTooltip name="СписокАктивыВидРасширеннаяПодсказка" id="26"/>
-								</LabelField>
-								<LabelField name="СписокАктивыВалюта" id="27">
-									<DataPath>СписокАктивы.Валюта</DataPath>
-									<ContextMenu name="СписокАктивыВалютаКонтекстноеМеню" id="28"/>
-									<ExtendedTooltip name="СписокАктивыВалютаРасширеннаяПодсказка" id="29"/>
-								</LabelField>
-								<LabelField name="СписокАктивыТикер" id="30">
-									<DataPath>СписокАктивы.Тикер</DataPath>
-									<ContextMenu name="СписокАктивыТикерКонтекстноеМеню" id="31"/>
-									<ExtendedTooltip name="СписокАктивыТикерРасширеннаяПодсказка" id="32"/>
-								</LabelField>
+								<ColumnGroup name="СписокАктивыКартинкаЭмитента" id="38">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы картинка эмитента</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы картинка эмитента</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокАктивыКартинкаЭмитентаРасширеннаяПодсказка" id="39"/>
+									<ChildItems>
+										<PictureField name="СписокАктивыКартинкаНавигационнаяСсылка" id="35">
+											<DataPath>СписокАктивы.КартинкаНавигационнаяСсылка</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+											<Width>4</Width>
+											<MaxWidth>2</MaxWidth>
+											<Height>2</Height>
+											<MaxHeight>2</MaxHeight>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<PictureSize>Proportionally</PictureSize>
+											<Zoomable>true</Zoomable>
+											<ImageScale>10</ImageScale>
+											<ContextMenu name="СписокАктивыКартинкаНавигационнаяСсылкаКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="СписокАктивыКартинкаНавигационнаяСсылкаРасширеннаяПодсказка" id="37"/>
+										</PictureField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокАктивыИмяТикер" id="33">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы имя тикер</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы имя тикер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>20</Width>
+									<ExtendedTooltip name="СписокАктивыИмяТикерРасширеннаяПодсказка" id="34"/>
+									<ChildItems>
+										<ColumnGroup name="СписокАктивыГруппаНаименованиеГоризонтальная" id="51">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список активы группа наименование горизонтальная</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список активы группа наименование горизонтальная</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>20</Width>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СписокАктивыГруппаНаименованиеГоризонтальнаяРасширеннаяПодсказка" id="52"/>
+											<ChildItems>
+												<LabelField name="СписокАктивыНаименование" id="18">
+													<DataPath>СписокАктивы.Наименование</DataPath>
+													<Font ref="style:NormalTextFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="СписокАктивыНаименованиеКонтекстноеМеню" id="19"/>
+													<ExtendedTooltip name="СписокАктивыНаименованиеРасширеннаяПодсказка" id="20"/>
+												</LabelField>
+												<LabelField name="СписокАктивыВалюта" id="27">
+													<DataPath>СписокАктивы.Валюта</DataPath>
+													<ContextMenu name="СписокАктивыВалютаКонтекстноеМеню" id="28"/>
+													<ExtendedTooltip name="СписокАктивыВалютаРасширеннаяПодсказка" id="29"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="СписокАктивыГруппаИмяТикерГоризонтальная" id="46">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список активы группа имя тикер горизонтальная</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список активы группа имя тикер горизонтальная</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>20</Width>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СписокАктивыГруппаИмяТикерГоризонтальнаяРасширеннаяПодсказка" id="47"/>
+											<ChildItems>
+												<LabelField name="СписокАктивыТикер" id="30">
+													<DataPath>СписокАктивы.Тикер</DataPath>
+													<Font ref="style:NormalTextFont" height="8" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="СписокАктивыТикерКонтекстноеМеню" id="31"/>
+													<ExtendedTooltip name="СписокАктивыТикерРасширеннаяПодсказка" id="32"/>
+												</LabelField>
+												<LabelField name="СписокАктивыКоличествоОстаток1" id="48">
+													<DataPath>СписокАктивы.КоличествоОстаток</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Количество</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СписокАктивыКоличествоОстаток1КонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="СписокАктивыКоличествоОстаток1РасширеннаяПодсказка" id="50"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокАктивыСуммаПокупок" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы сумма покупок</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы сумма покупок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СписокАктивыСуммаПокупокРасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<LabelField name="СписокАктивыСуммаОстаток" id="40">
+											<DataPath>СписокАктивы.СуммаОстаток</DataPath>
+											<ContextMenu name="СписокАктивыСуммаОстатокКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="СписокАктивыСуммаОстатокРасширеннаяПодсказка" id="42"/>
+										</LabelField>
+										<LabelField name="СписокАктивыСуммаОстатокВРублях" id="55">
+											<DataPath>СписокАктивы.СуммаОстатокВРублях</DataPath>
+											<ContextMenu name="СписокАктивыСуммаОстатокВРубляхКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="СписокАктивыСуммаОстатокВРубляхРасширеннаяПодсказка" id="57"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокАктивыГруппаТекущаяСтоимость" id="58">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы группа текущая стоимость</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список активы группа текущая стоимость</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СписокАктивыГруппаТекущаяСтоимостьРасширеннаяПодсказка" id="59"/>
+									<ChildItems>
+										<LabelField name="СписокАктивыТекущаяСтоимость" id="60">
+											<DataPath>СписокАктивы.ТекущаяСтоимость</DataPath>
+											<ContextMenu name="СписокАктивыТекущаяСтоимостьКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="СписокАктивыТекущаяСтоимостьРасширеннаяПодсказка" id="62"/>
+										</LabelField>
+										<LabelField name="СписокАктивыТекущаяСтоимостьВРублях" id="63">
+											<DataPath>СписокАктивы.ТекущаяСтоимостьВРублях</DataPath>
+											<ContextMenu name="СписокАктивыТекущаяСтоимостьВРубляхКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="СписокАктивыТекущаяСтоимостьВРубляхРасширеннаяПодсказка" id="65"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -125,33 +298,43 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>~СписокАктивы.Ссылка</Field>
+				<Field>СписокАктивы.КартинкаНавигационнаяСсылка</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	СправочникАктивы.Ссылка КАК Ссылка,
-	СправочникАктивы.ПометкаУдаления КАК ПометкаУдаления,
-	СправочникАктивы.Код КАК Код,
+	СправочникАктивы.Ссылка КАК Актив,
 	СправочникАктивы.Наименование КАК Наименование,
 	СправочникАктивы.Вид КАК Вид,
 	СправочникАктивы.Валюта КАК Валюта,
 	СправочникАктивы.Тикер КАК Тикер,
-	СправочникАктивы.Отрасль КАК Отрасль,
-	СправочникАктивы.Номинал КАК Номинал,
-	СправочникАктивы.СокращенноеНаименование КАК СокращенноеНаименование,
-	СправочникАктивы.Биржа КАК Биржа,
-	СправочникАктивы.БазовыйАктив КАК БазовыйАктив,
-	СправочникАктивы.БазоваяВалюта КАК БазоваяВалюта,
-	СправочникАктивы.ИндивидуальныеКомиссии.(
-		Ссылка КАК Ссылка,
-		НомерСтроки КАК НомерСтроки,
-		Брокер КАК Брокер,
-		ПроцентКомиссии КАК ПроцентКомиссии
-	) КАК ИндивидуальныеКомиссии,
-	СправочникАктивы.Предопределенный КАК Предопределенный,
-	СправочникАктивы.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+	СправочникАктивы.КартинкаНавигационнаяСсылка40_40 КАК КартинкаНавигационнаяСсылка,
+	СУММА(АктивыОстаткиОстатки.СуммаОстаток) КАК СуммаОстаток,
+	СУММА(АктивыОстаткиОстатки.КоличествоОстаток) КАК КоличествоОстаток,
+	ВЫРАЗИТЬ("" КАК СТРОКА(100)) КАК СуммаОстатокВРублях,
+	ВЫРАЗИТЬ("" КАК СТРОКА(100)) КАК ТекущаяСтоимость,
+	ВЫРАЗИТЬ("" КАК СТРОКА(100)) КАК ТекущаяСтоимостьВРублях
 ИЗ
-	Справочник.Активы КАК СправочникАктивы</QueryText>
+	Справочник.Активы КАК СправочникАктивы
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрНакопления.АктивыОстатки.Остатки КАК АктивыОстаткиОстатки
+		ПО СправочникАктивы.Ссылка = АктивыОстаткиОстатки.Актив
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;Портфель = НЕОПРЕДЕЛЕНО
+				ТОГДА ИСТИНА
+			ИНАЧЕ АктивыОстаткиОстатки.Портфель = &amp;Портфель
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	СправочникАктивы.Ссылка,
+	СправочникАктивы.Наименование,
+	СправочникАктивы.Вид,
+	СправочникАктивы.Валюта,
+	СправочникАктивы.Тикер,
+	СправочникАктивы.КартинкаНавигационнаяСсылка40_40</QueryText>
 				<MainTable>Catalog.Активы</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -166,10 +349,77 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Вид</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
 					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="ТаблицаТекущихЦен" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица текущих цен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Актив" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актив</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Активы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Цена" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.Сумма10</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокАктивыВид</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокАктивы.Ссылка</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 </Form>

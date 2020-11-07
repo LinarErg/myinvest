@@ -224,6 +224,7 @@
 			<Catalog>СписокТорговыхСистем</Catalog>
 			<Catalog>Эмитент</Catalog>
 			<Catalog>Страны</Catalog>
+			<Catalog>НастройкиДиверсификации</Catalog>
 			<Document>ВыплатаДивидендовКупонов</Document>
 			<Document>КорректировкаОстатковДС</Document>
 			<Document>ПополнениеВыводСБрокерскогоСчета</Document>
@@ -243,6 +244,7 @@
 			<Enum>РазрезыДиверсификации</Enum>
 			<Report>ОстаткиДенежныхСредств</Report>
 			<Report>Портфель</Report>
+			<Report>РаспределениеПоАналитике</Report>
 			<DataProcessor>ВосстановлениеПоследовательностиДвиженияАктивов</DataProcessor>
 			<DataProcessor>ГлавнаяСтраница</DataProcessor>
 			<DataProcessor>ЗагрузкаДвиженийВТБ</DataProcessor>

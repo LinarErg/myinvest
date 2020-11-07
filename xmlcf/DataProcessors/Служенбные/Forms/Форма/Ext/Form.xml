@@ -7,6 +7,43 @@
 			<CommandName>Form.Command.ЗагрузитьВсеДанныеОКотировках</CommandName>
 			<ExtendedTooltip name="ЗагрузитьВсеДанныеОКотировкахРасширеннаяПодсказка" id="2"/>
 		</Button>
+		<Button name="РасчитататьЦенуАктиваВРублях" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.РасчитататьЦенуАктиваВРублях</CommandName>
+			<ExtendedTooltip name="РасчитататьЦенуАктиваВРубляхРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<UsualGroup name="ГруппаПроведениеПоПартиям" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведение по партиям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проведение по партиям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПроведениеПоПартиямРасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<InputField name="Портфель" id="7">
+					<DataPath>Объект.Портфель</DataPath>
+					<ContextMenu name="ПортфельКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПортфельРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаНачалаПроведения" id="10">
+					<DataPath>Объект.ДатаНачалаПроведения</DataPath>
+					<ContextMenu name="ДатаНачалаПроведенияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаНачалаПроведенияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<Button name="ВыполнитьПроведениеПоПартиям" id="13">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыполнитьПроведениеПоПартиям</CommandName>
+					<ExtendedTooltip name="ВыполнитьПроведениеПоПартиямРасширеннаяПодсказка" id="14"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -31,6 +68,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьВсеДанныеОКотировках</Action>
+		</Command>
+		<Command name="РасчитататьЦенуАктиваВРублях" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расчитатать цену актива в рублях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расчитатать цену актива в рублях</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РасчитататьЦенуАктиваВРублях</Action>
+		</Command>
+		<Command name="ВыполнитьПроведениеПоПартиям" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проведение по партиям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проведение по партиям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроведениеПоПартиям</Action>
 		</Command>
 	</Commands>
 </Form>
